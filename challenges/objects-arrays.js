@@ -13,11 +13,22 @@ function Dinosaur(attr) {
     this.diet = attr.diet;
     this.weight = attr.weight;
     this.height = attr.height;
-    this.epoch = attr.epoch
+    this.epoch = attr.epoch;
+    this.sound = attr.sound
 }
 
-const TRex = new Dinosaur({species:"tyrannosaurus", diet:"carnivorous", weight:"7000kg", height:"12m", epoch:"Late Cretaceous"});
+const TRex = new Dinosaur({
+    species:"tyrannosaurus",
+    diet:"carnivorous",
+    weight:"7000kg",
+    height:"12m",
+    epoch:"Late Cretaceous",
 
+    sound: function(){
+      return "RAWERSRARARWERSARARARRRR!";
+    }
+
+});
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 
 const Stegg = new Dinosaur({species:"stegosaurus",diet:"herbivorous", weight:"2000kg", height:"9m", epoch:"Late Jurassic"})
@@ -42,7 +53,7 @@ console.log(TRex.epoch);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(TRex.sound());
 
 
 // ==== Arrays ====
