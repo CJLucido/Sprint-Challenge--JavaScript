@@ -52,6 +52,8 @@ Explicit binding - this refers to the object we tell it to refer to by using cal
 
 5. Why do we need super() in an extended class?
 
+Super and extends work together to inherit the prototype and the properties listed in the constructor function (parent class).
+
 ## Project Set up
 
 Follow these steps to set up and work on your project:
