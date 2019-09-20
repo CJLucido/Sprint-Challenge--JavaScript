@@ -16,6 +16,27 @@ function Dinosaur(attr) {
     this.epoch = attr.epoch;
     this.sound = attr.sound
 }
+///////////////THIS IS an ALTERNATE ANSWER FOR TYRANNOSAURUS//////////////////
+// function TRex(attr){
+//   Dinosaur.call(this, attr);
+// }
+
+// TRex.prototype = Object.create(Dinosaur.prototype);
+
+// TRex.prototype.aggro = function(){
+//   return "RAWERSRARARWERSARARARRRR!";
+// }
+
+// const Rexxy = new TRex({
+//       species:"tyrannosaurus",
+//     diet:"carnivorous",
+//     weight:"7000kg",
+//     height:"12m",
+//     epoch:"Late Cretaceous",
+// });
+
+// console.log(Rexxy.aggro())
+/////////////////////////////////////////////
 
 const TRex = new Dinosaur({
     species:"tyrannosaurus",
