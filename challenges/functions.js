@@ -42,6 +42,8 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 // Explanation: 
 
+//the reference to 'internal' in the nested Function closes the reference loop of the higher scoped variable 'internal'. It creates a closure.
+
 
 const external = "I'm outside the function";
 
